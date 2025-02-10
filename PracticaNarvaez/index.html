@@ -20,7 +20,7 @@
                 <div class="mb-3">
                     <label for="razonSocial" class="form-label">Razón Social:</label>
                     <input type="text" class="form-control" id="razonSocial" required>
-                    <div class="invalid-feedback">El formato de la razón social es inválido.</div>
+                    <div class="invalid-feedback">Campo requerido.</div>
                 </div>
 
                 <div class="row">
@@ -62,9 +62,9 @@
             document.addEventListener("DOMContentLoaded", function() {
         const input = document.querySelector("#telefono");
         window.intlTelInput(input, {
-            preferredCountries: ["mx", "us", "es"], // Opcional: Países favoritos
-            separateDialCode: true, // Muestra el código separado
-            utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/js/utils.js" // Para formateo avanzado
+            preferredCountries: ["mx", "us", "es"], 
+            separateDialCode: true, 
+            utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/js/utils.js" 
         });
     });
         document.getElementById("empresaForm").addEventListener("submit", function (event) {
