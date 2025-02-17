@@ -13,7 +13,7 @@
   <body>
 
     <div class="container mt-4">
-        <a href="/PracticaNarvaez/Register.html" class="btn btn-primary mb-4">Registrar Empresa</a>
+        <a href="/PracticaNarvaez/Register.html" class="btn btn-primary mb-4 ">Registrar Empresa</a>
 
       <div class="card">
         <h1 class="text-center ">Empresas</h1>
@@ -29,7 +29,7 @@
               </tr>
             </thead>
             <tbody id="empresaTableBody">
-              <!-- Aquí se insertarán los datos dinámicamente -->
+              
             </tbody>
           </table>
         </div>
@@ -66,7 +66,7 @@
 
       function mostrarEmpresas(empresas) {
         const tableBody = document.getElementById("empresaTableBody");
-        tableBody.innerHTML = ""; // Limpia el contenido antes de agregar nuevas filas
+        tableBody.innerHTML = ""; 
 
         empresas.forEach((empresa) => {
           const row = `
